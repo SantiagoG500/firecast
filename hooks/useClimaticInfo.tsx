@@ -1,15 +1,15 @@
 import { useMemo, useState } from 'react';
 import { ChartData } from 'chart.js';
 
-import { climatic_data } from "@/mocks/climaticData.json";
+import climateDataJSON from "@/mocks/climaticData.json";
 import { ClimateData } from '@/types';
 import { recalcValues } from '@/utils/simulator';
 
 export function useClimaticInfo() {    
-    const months = climatic_data.map((val) => val.mes)
+    const months = climateDataJSON.climatic_data.map((val) => val.mes)
     const chartLabels = months.map((month) => month.substring(0,3))  
 
-    const [climaticData, setClimaticData] = useState(climatic_data)
+    const [climaticData, setClimaticData] = useState<ClimateData[]>(climateDataJSON.climatic_data)
     const [selectedMonthId, setSelectedMonthId] = useState(months[0])
 
     const monthData = useMemo( () => 
