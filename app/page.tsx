@@ -3,6 +3,7 @@ import { button as buttonStyles } from "@heroui/theme";
 
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import { siteConfig } from '@/config/site';
 
 export default function Home() {
   return (
@@ -23,7 +24,6 @@ export default function Home() {
 
       <div className="flex flex-wrap justify-center gap-3 ">
         <Link
-          isExternal
           className={buttonStyles({
             color: "primary",
             radius: "full",
@@ -37,8 +37,7 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          // href={siteConfig.links.github}
-          href={'https://github.com/SantiagoG500/firecast'}
+          href={siteConfig.links.github}
         >
           <GithubIcon size={20} />
           GitHub
