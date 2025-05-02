@@ -1,31 +1,51 @@
-import {Card, CardHeader, CardBody} from "@heroui/card";
+'use client'
+import 'katex/dist/katex.min.css'
 
 
-export default function PricingPage() {
+import AreaChart from '@/components/AreaChart';
+import { EcuationCard } from '@/components/EcuationCard';
+import { useClimaticInfo } from '@/hooks/useClimaticInfo';
+import { ClimaticOptionsCard } from '@/components/ClimaticOptionsCard';
+import { ClimaticDataCard } from '@/components/ClimateDataCard';
+
+
+export default function SimulatorPage() {
+  const { 
+    ratiosData,
+    months,
+    selectedMonthId,
+    monthData,
+    climaticData,
+    columns,
+
+    updateMonthData,
+    changeCurrentMonth,
+  } = useClimaticInfo()
+
   return (
     <div>
-      <h1 className='text-center font-bold text-4xl'>Simulator</h1>
-
-      <main className='bg-red-50 flex justify-center gap-5 flex-wrap mt-9bg-red-50'>
-        <div className='flex flex-col gap-4 w-11/12 md:w-10/12 max-w-lg lg:max-w-96'>
-          <Card>
-            <CardHeader>ads</CardHeader>
-            <CardBody>body</CardBody>
-          </Card>
-          <Card>
-            <CardHeader>ads</CardHeader>
-            <CardBody>body</CardBody>
-          </Card>
+      <main className='flex flex-col items-center'>
+        <div className='flex justify-center w-full max-w-md h-64 md:max-w-xl md:h-80'>
+          <AreaChart climaticData={ratiosData} />
         </div>
-        <div className='flex flex-col gap-4 w-11/12 md:w-10/12 max-w-lg'>
-          <Card>
-            <CardHeader>ads</CardHeader>
-            <CardBody>body</CardBody>
-          </Card>
-          <Card>
-            <CardHeader>ads</CardHeader>
-            <CardBody>body</CardBody>
-          </Card>
+
+        <div className=' w-full gap-4 md:w-4/5  flex flex-col md:grid grid-cols-2 grid-rows-[min-content, 1fr]  mt-14  '>
+          <ClimaticOptionsCard
+            changeCurrentMonth={changeCurrentMonth}
+            monthData={monthData}
+            months={months}
+            selectedMonthId={selectedMonthId}
+            updateMonthData={updateMonthData}
+          />
+
+          <EcuationCard/>
+
+          <ClimaticDataCard
+            changeCurrentMonth={changeCurrentMonth}
+            climaticData={climaticData}
+            columns={columns}
+            selectedMonthId={selectedMonthId}
+          />
         </div>
       </main>
     </div>
