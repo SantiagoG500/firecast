@@ -15,8 +15,8 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Home",
+      href: "/",
     },
     {
       label: "Simulator",

@@ -10,7 +10,7 @@
       "interaccion_temp_sequedad": 0.4176,
       "coeficiente_total": 1.504,
       "tasa_de_cambio": 2.02368,
-      "funcion_logistica_aplicada": 29.09
+      "funcion_logistica_aplicada": 24.85
     },
     {
       "mes": "Febrero",
@@ -22,7 +22,7 @@
       "interaccion_temp_sequedad": 0.4087,
       "coeficiente_total": 1.479,
       "tasa_de_cambio": 2.00299,
-      "funcion_logistica_aplicada": 28.04
+      "funcion_logistica_aplicada": 24.23
     },
     {
       "mes": "Marzo",
@@ -34,7 +34,7 @@
       "interaccion_temp_sequedad": 0.2852,
       "coeficiente_total": 1.322,
       "tasa_de_cambio": 1.72748,
-      "funcion_logistica_aplicada": 16.37
+      "funcion_logistica_aplicada": 13.04
     },
     {
       "mes": "Abril",
@@ -46,7 +46,7 @@
       "interaccion_temp_sequedad": 0.1323,
       "coeficiente_total": 1.097,
       "tasa_de_cambio": 1.34711,
-      "funcion_logistica_aplicada": 7.03
+      "funcion_logistica_aplicada": 5.17
     },
     {
       "mes": "Mayo",
@@ -58,7 +58,7 @@
       "interaccion_temp_sequedad": 0.1116,
       "coeficiente_total": 1.056,
       "tasa_de_cambio": 1.28044,
-      "funcion_logistica_aplicada": 6.01
+      "funcion_logistica_aplicada": 4.38
     },
     {
       "mes": "Junio",
@@ -70,7 +70,7 @@
       "interaccion_temp_sequedad": 0.232,
       "coeficiente_total": 1.24,
       "tasa_de_cambio": 1.58336,
-      "funcion_logistica_aplicada": 12.01
+      "funcion_logistica_aplicada": 9.33
     },
     {
       "mes": "Julio",
@@ -82,7 +82,7 @@
       "interaccion_temp_sequedad": 0.2968,
       "coeficiente_total": 1.366,
       "tasa_de_cambio": 1.78096,
-      "funcion_logistica_aplicada": 18.28
+      "funcion_logistica_aplicada": 14.86
     },
     {
       "mes": "Agosto",
@@ -94,7 +94,7 @@
       "interaccion_temp_sequedad": 0.342,
       "coeficiente_total": 1.435,
       "tasa_de_cambio": 1.89784,
-      "funcion_logistica_aplicada": 23.05
+      "funcion_logistica_aplicada": 19.22
     },
     {
       "mes": "Septiembre",
@@ -106,7 +106,7 @@
       "interaccion_temp_sequedad": 0.3304,
       "coeficiente_total": 1.377,
       "tasa_de_cambio": 1.8254,
-      "funcion_logistica_aplicada": 20.00
+      "funcion_logistica_aplicada": 16.77
     },
     {
       "mes": "Octubre",
@@ -118,7 +118,7 @@
       "interaccion_temp_sequedad": 0.186,
       "coeficiente_total": 1.132,
       "tasa_de_cambio": 1.4338,
-      "funcion_logistica_aplicada": 8.58
+      "funcion_logistica_aplicada": 6.82
     },
     {
       "mes": "Noviembre",
@@ -130,7 +130,7 @@
       "interaccion_temp_sequedad": 0.1586,
       "coeficiente_total": 1.117,
       "tasa_de_cambio": 1.3915,
-      "funcion_logistica_aplicada": 7.79
+      "funcion_logistica_aplicada": 5.91
     },
     {
       "mes": "Diciembre",
@@ -142,7 +142,7 @@
       "interaccion_temp_sequedad": 0.3009,
       "coeficiente_total": 1.347,
       "tasa_de_cambio": 1.75469,
-      "funcion_logistica_aplicada": 17.32
+      "funcion_logistica_aplicada": 13.65
     }
   ],
   "legend": {

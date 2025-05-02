@@ -15,8 +15,16 @@ export function ClimaticDataCard({selectedMonthId, climaticData, columns, change
   const formatCell = (obj: any, key: string | number) => {
     const value = getKeyValue(obj, key)
     
-    if (typeof value === 'number') {
-      return value.toFixed(3)
+    if (typeof value === 'number' ) {
+      if ( key === 'funcion_logistica_aplicada' ) return `${value.toFixed(4)}%`
+      if (
+        key === 'tasa_de_cambio' ||
+        key === 'coeficiente_total' ||
+        key === 'interaccion_temp_sequedad'||
+        key === 'interaccion_temp_viento'
+      ) {
+        return value.toFixed(4)
+      }
     }
 
     return value

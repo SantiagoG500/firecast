@@ -86,7 +86,7 @@ export function ClimaticOptionsCard({months, selectedMonthId, monthData, changeC
               value={monthData.CS}
 
               onValueChange={(val) => {
-                updateMonthData({coefficient: 'CV', value: val})
+                updateMonthData({coefficient: 'CS', value: val})
               }}
             />
           </div>
