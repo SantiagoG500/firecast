@@ -1,0 +1,159 @@
+{
+  "climatic_data": [
+    {
+      "mes": "Enero",
+      "CT": 0.58,
+      "CH": 0.27,
+      "CV": 0.31,
+      "CS": 0.72,
+      "interaccion_temp_viento": 0.1798,
+      "interaccion_temp_sequedad": 0.4176,
+      "coeficiente_total": 1.504,
+      "tasa_de_cambio": 2.02368,
+      "funcion_logistica_aplicada": 29.09
+    },
+    {
+      "mes": "Febrero",
+      "CT": 0.61,
+      "CH": 0.28,
+      "CV": 0.32,
+      "CS": 0.67,
+      "interaccion_temp_viento": 0.1952,
+      "interaccion_temp_sequedad": 0.4087,
+      "coeficiente_total": 1.479,
+      "tasa_de_cambio": 2.00299,
+      "funcion_logistica_aplicada": 28.04
+    },
+    {
+      "mes": "Marzo",
+      "CT": 0.62,
+      "CH": 0.23,
+      "CV": 0.3,
+      "CS": 0.46,
+      "interaccion_temp_viento": 0.186,
+      "interaccion_temp_sequedad": 0.2852,
+      "coeficiente_total": 1.322,
+      "tasa_de_cambio": 1.72748,
+      "funcion_logistica_aplicada": 16.37
+    },
+    {
+      "mes": "Abril",
+      "CT": 0.63,
+      "CH": 0.18,
+      "CV": 0.26,
+      "CS": 0.21,
+      "interaccion_temp_viento": 0.1638,
+      "interaccion_temp_sequedad": 0.1323,
+      "coeficiente_total": 1.097,
+      "tasa_de_cambio": 1.34711,
+      "funcion_logistica_aplicada": 7.03
+    },
+    {
+      "mes": "Mayo",
+      "CT": 0.62,
+      "CH": 0.17,
+      "CV": 0.25,
+      "CS": 0.18,
+      "interaccion_temp_viento": 0.155,
+      "interaccion_temp_sequedad": 0.1116,
+      "coeficiente_total": 1.056,
+      "tasa_de_cambio": 1.28044,
+      "funcion_logistica_aplicada": 6.01
+    },
+    {
+      "mes": "Junio",
+      "CT": 0.58,
+      "CH": 0.2,
+      "CV": 0.29,
+      "CS": 0.4,
+      "interaccion_temp_viento": 0.1682,
+      "interaccion_temp_sequedad": 0.232,
+      "coeficiente_total": 1.24,
+      "tasa_de_cambio": 1.58336,
+      "funcion_logistica_aplicada": 12.01
+    },
+    {
+      "mes": "Julio",
+      "CT": 0.56,
+      "CH": 0.22,
+      "CV": 0.33,
+      "CS": 0.53,
+      "interaccion_temp_viento": 0.1848,
+      "interaccion_temp_sequedad": 0.2968,
+      "coeficiente_total": 1.366,
+      "tasa_de_cambio": 1.78096,
+      "funcion_logistica_aplicada": 18.28
+    },
+    {
+      "mes": "Agosto",
+      "CT": 0.57,
+      "CH": 0.24,
+      "CV": 0.34,
+      "CS": 0.6,
+      "interaccion_temp_viento": 0.1938,
+      "interaccion_temp_sequedad": 0.342,
+      "coeficiente_total": 1.435,
+      "tasa_de_cambio": 1.89784,
+      "funcion_logistica_aplicada": 23.05
+    },
+    {
+      "mes": "Septiembre",
+      "CT": 0.59,
+      "CH": 0.25,
+      "CV": 0.32,
+      "CS": 0.56,
+      "interaccion_temp_viento": 0.1888,
+      "interaccion_temp_sequedad": 0.3304,
+      "coeficiente_total": 1.377,
+      "tasa_de_cambio": 1.8254,
+      "funcion_logistica_aplicada": 20.00
+    },
+    {
+      "mes": "Octubre",
+      "CT": 0.6,
+      "CH": 0.21,
+      "CV": 0.28,
+      "CS": 0.31,
+      "interaccion_temp_viento": 0.168,
+      "interaccion_temp_sequedad": 0.186,
+      "coeficiente_total": 1.132,
+      "tasa_de_cambio": 1.4338,
+      "funcion_logistica_aplicada": 8.58
+    },
+    {
+      "mes": "Noviembre",
+      "CT": 0.61,
+      "CH": 0.19,
+      "CV": 0.27,
+      "CS": 0.26,
+      "interaccion_temp_viento": 0.1647,
+      "interaccion_temp_sequedad": 0.1586,
+      "coeficiente_total": 1.117,
+      "tasa_de_cambio": 1.3915,
+      "funcion_logistica_aplicada": 7.79
+    },
+    {
+      "mes": "Diciembre",
+      "CT": 0.59,
+      "CH": 0.22,
+      "CV": 0.29,
+      "CS": 0.51,
+      "interaccion_temp_viento": 0.1711,
+      "interaccion_temp_sequedad": 0.3009,
+      "coeficiente_total": 1.347,
+      "tasa_de_cambio": 1.75469,
+      "funcion_logistica_aplicada": 17.32
+    }
+  ],
+  "legend": {
+    "CT": "Temperatura",
+    "CH": "Humedad",
+    "CV": "Viento",
+    "CS": "Sequedad",
+    "interaccion_temp_viento": "Interacción temperatura-viento",
+    "interaccion_temp_sequedad": "Interacción temperatura-sequedad",
+    "coeficiente_total": "CT-·CH+CV+CS",
+    "tasa_de_cambio": "K",
+    "funcion_logistica_aplicada": "Resultado de función logística"
+  }
+}
