@@ -1,12 +1,44 @@
-export default function PricingLayout({
+import { Navbar, NavbarContent, NavbarItem } from '@heroui/navbar';
+import { link as linkStyles } from "@heroui/theme";
+import clsx from 'clsx';
+import NextLink from "next/link";
+
+export default function SimulatorLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    // <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
     <section>
-      {/* <div className="inline-block max-w-lg text-center justify-center"> */}
+      <Navbar position='static'>
+        <NavbarContent>
+          <NavbarItem>
+            <NextLink
+              className={clsx(
+                linkStyles({ color: "foreground" }),
+                "data-[active=true]:text-primary data-[active=true]:font-medium",
+              )}
+              color="foreground"
+              href='/simulator'
+            >
+              Datos Mensuales
+            </NextLink>
+          </NavbarItem>
+          <NavbarItem>
+            <NextLink
+              className={clsx(
+                linkStyles({ color: "foreground" }),
+                "data-[active=true]:text-primary data-[active=true]:font-medium",
+              )}
+              color="foreground"
+              href='/simulator/calc'
+            >
+              Calculadora de probabilidad
+            </NextLink>
+          </NavbarItem>
+
+        </NavbarContent>
+      </Navbar>
       <div>
         {children}
       </div>
