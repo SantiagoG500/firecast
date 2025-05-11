@@ -10,8 +10,8 @@ export default function SimulatorLayout({
 }) {
   return (
     <section>
-      <Navbar position='static'>
-        <NavbarContent>
+      <Navbar className='mb-5'  position='static'>
+        <NavbarContent className='overflow-x-auto'>
           <NavbarItem>
             <NextLink
               className={clsx(
