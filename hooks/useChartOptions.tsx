@@ -1,59 +1,29 @@
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
 
-const initialOptions = {
-  maintainAspectRatio: false,
-  responsive: true,
-  plugins: {
-    legend: {
-      position: 'top' as const,
-      labels: {
-        color: '#1f2937',
-        font: {
-          size: 14,
-          weight: 'bold' as const,
-        },
-      },
-    },
-    title: {
-      display: true,
-      text: 'coeficientes de temperatura',
-      color: 'fc9581',
-      font: {
-        size: 18,
-        weight: 'bold' as const,
-      },
-    },
-    tooltip: {
-      backgroundColor: '#1f2937',
-      titleColor: '#facc15',
-      bodyColor: '#f3f4f6',
-      borderColor: '#3b82f6',
-      borderWidth: 1,
-      titleFont: {
-        weight: 'bold' as const,
-      },
-    },
-  },
-  elements: {
-    line: {
-      tension: 0.4,
-    },
-  },
-}
+export const ChartKeys = {
+  RATIOS_DATA: "ratios_data",
+  INTERACTIONS: "interactions",
+  LOGISTIC_FUNC: "logistic_func",
+} as const;
 
+export const ChartNames = {
+  RATIOS_DATA: "Coeficientes",
+  INTERACTIONS: "Interacciones",
+  LOGISTIC_FUNC: "Función logística",
+} as const;
+
+export type ChartMap = {
+  [K in keyof typeof ChartKeys]: (typeof ChartNames)[K];
+};
 
 export function useChartOptions() {
   const { resolvedTheme } = useTheme()
-  const [options, setOptions] = useState(initialOptions)
-
-  useEffect(() => {
-    const isDark = resolvedTheme === 'dark'
-
-    const newOptions = {
-      maintainAspectRatio: false,
-      responsive: true,
-      plugins: {
+  const isDark = resolvedTheme === 'dark'
+  const getChartOptions = (chartTitle: string)  => {
+    return {
+    maintainAspectRatio: false,
+    responsive: true,
+    plugins: {
         legend: {
           position: 'top' as const,
           labels: {
@@ -66,7 +36,7 @@ export function useChartOptions() {
         },
         title: {
           display: true,
-          text: 'Coeficientes climáticos',
+          text: chartTitle,
           color: isDark ? '#f9fafb' : '#111827',
           font: {
             size: 18,
@@ -90,9 +60,7 @@ export function useChartOptions() {
         },
       },
     }
+  }
 
-    setOptions(newOptions)
-  }, [resolvedTheme])
-
-  return {options}
+  return { getChartOptions }
 }
