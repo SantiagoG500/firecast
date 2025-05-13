@@ -12,6 +12,7 @@ import { ClimateData } from '@/types'
 import { recalcValues } from '@/utils/simulator'
 import { useClimaticInfo } from '@/hooks/useClimaticInfo'
 import { SolarCalculatorBoldDuotone } from '@/components/icons'
+import { DetailedValueTooltip } from '@/components/DetailedValueTooltip'
 
 type handleClimateValuesProps = {
   key: keyof ClimateData,
@@ -115,6 +116,12 @@ export default function LogisticFunction() {
                 >
                   <Progress
                     aria-label="Fire probability"
+                    label={
+                      <div className='flex gap-2'>
+                        <p>Probabilidad</p> 
+                        <DetailedValueTooltip probability={initialValues.funcion_logistica_aplicada}/>
+                      </div>
+                    }
                     maxValue={1}
                     minValue={0}
                     showValueLabel={true}

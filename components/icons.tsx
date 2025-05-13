@@ -220,3 +220,11 @@ export function SolarCalculatorBoldDuotone(props: React.SVGProps<SVGSVGElement>)
     <svg height={props.height} viewBox="0 0 24 24" width={props.width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M12 22c-4.243 0-6.364 0-7.682-1.465C3 19.072 3 16.714 3 12s0-7.071 1.318-8.536S7.758 2 12 2s6.364 0 7.682 1.464C21 4.93 21 7.286 21 12s0 7.071-1.318 8.535S16.242 22 12 22" fill="currentColor" opacity=".5" /><path d="M15 6H9c-.465 0-.697 0-.888.051a1.5 1.5 0 0 0-1.06 1.06C7 7.304 7 7.536 7 8s0 .697.051.888a1.5 1.5 0 0 0 1.06 1.06C8.304 10 8.536 10 9 10h6c.465 0 .697 0 .888-.051a1.5 1.5 0 0 0 1.06-1.06C17 8.696 17 8.464 17 8s0-.697-.051-.888a1.5 1.5 0 0 0-1.06-1.06C15.697 6 15.464 6 15 6m-7 8a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2" fill="currentColor" /></svg>
   )
 }
+
+export function SolarQuestionCircleLineDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<g fill="none"><circle cx="12" cy="12" opacity=".5" r="10" stroke="currentColor" strokeWidth="1.5" /><path d="M10.125 8.875a1.875 1.875 0 1 1 2.828 1.615c-.475.281-.953.708-.953 1.26V13" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" /><circle cx="12" cy="16" fill="currentColor" r="1" /></g></svg>
+  )
+}
