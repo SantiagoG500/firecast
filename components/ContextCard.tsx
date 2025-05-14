@@ -1,7 +1,7 @@
 'use client'
 import { Card, CardBody, CardHeader } from '@heroui/card';
 
-import { SolarSun2BoldDuotone, SolarTemperatureBoldDuotone, SolarWaterdropBoldDuotone, SolarWindBoldDuotone } from './icons';
+import { SolarCalculatorBoldDuotone, SolarFireSquareBoldDuotone, SolarSun2BoldDuotone, SolarTemperatureBoldDuotone, SolarWaterdropBoldDuotone, SolarWindBoldDuotone } from './icons';
 
 
 
@@ -29,6 +29,28 @@ export function ContextCard() {
           <li className='text-lg flex items-center font-bold gap-2 hover:text-warning transition-colors'>
             <SolarSun2BoldDuotone height={'1.5em'} width={'1.5em'}/>
             CS: <span className='font-medium'>Coeficiente de Sequedad</span>
+          </li>
+          <li className='text-lg flex items-center font-bold gap-2 hover:text-[#dd7fae] transition-colors'>
+            <span className='flex gap-1'>
+              <SolarTemperatureBoldDuotone height={'1.5em'} width={'1.5em'}/> &amp;
+              <SolarWindBoldDuotone height={'1.5em'} width={'1.5em'}/>:
+            </span>
+            <span className='font-medium'>Interacción temp. viento</span>
+          </li>
+          <li className='text-lg flex items-center font-bold gap-2 hover:text-[#6098C3] transition-colors'>
+            <span className='flex gap-1'>
+              <SolarTemperatureBoldDuotone height={'1.5em'} width={'1.5em'}/> &amp;
+              <SolarSun2BoldDuotone height={'1.5em'} width={'1.5em'}/>:
+            </span>
+            <span className='font-medium'>Interacción temp. viento</span>
+          </li>
+          <li className='text-lg flex items-center font-bold gap-2 hover:text-[#D9D4E8] transition-colors'>
+              <SolarCalculatorBoldDuotone height={'1.5em'} width={'1.5em'}/>:
+              <span className='font-medium'>Coeficiente total</span>
+          </li>
+          <li className='text-lg flex items-center font-bold gap-2 hover:text-[#7ED4FC] transition-colors'>
+              <SolarFireSquareBoldDuotone height={'1.5em'} width={'1.5em'}/>:
+              <span className='font-medium'>Función logística</span>
           </li>
         </ul>
       </CardBody>
