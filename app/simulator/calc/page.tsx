@@ -29,7 +29,7 @@ type COLOR_CASES = typeof COLOR_CASES[keyof typeof COLOR_CASES]
 export default function LogisticFunction() {
   const { climaticData } = useClimaticInfo()
   const [ initialValues, setInitialValues ] = useState<ClimateData>(recalcValues(climaticData[0]))
-  const probability = initialValues.funcion_logistica_aplicada * 100
+  const probability = initialValues.funcion_logistica_aplicada
   const [ titleColor, setTitleColor ] = useState<COLOR_CASES>('level1')
 
     useEffect( () => {
