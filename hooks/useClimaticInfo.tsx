@@ -11,7 +11,7 @@ export function useClimaticInfo() {
 
       return {
         ...newNada,
-        funcion_logistica_aplicada: (newNada.funcion_logistica_aplicada) * 100
+        funcion_logistica_aplicada: newNada.funcion_logistica_aplicada
       }
     })
     const months = climateDataJSON.climatic_data.map((val) => val.mes)
