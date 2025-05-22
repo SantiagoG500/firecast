@@ -8,7 +8,7 @@ import { siteConfig } from '@/config/site';
 export default function Home() {
   return (
     // FireCast: predicción inteligente para prevenir incendios forestales antes de que ocurran.
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-4 py-8 mt-16 md:mt-20">
       <div className="inline-block max-w-xl text-center justify-center">
         {/* <span className={title()}>Predicción inteligente de incendios con &nbsp;</span> */}
         <span className={title({ color: "yellow" })}>FireCast 🔥&nbsp;</span>

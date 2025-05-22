@@ -185,3 +185,64 @@ export const SearchIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
+
+export function SolarWindBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height ?? '1em'} viewBox="0 0 24 24" width={width ?? '1em'} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path clipRule="evenodd" d="M6.25 5.5A3.25 3.25 0 1 1 9.5 8.75H3a.75.75 0 0 1 0-1.5h6.5A1.75 1.75 0 1 0 7.75 5.5v.357a.75.75 0 1 1-1.5 0z" fill="currentColor" fillRule="evenodd" /><path d="M3.25 14a.75.75 0 0 1 .75-.75h14.5a4.25 4.25 0 1 1-4.25 4.25V17a.75.75 0 0 1 1.5 0v.5a2.75 2.75 0 1 0 2.75-2.75H4a.75.75 0 0 1-.75-.75" fill="currentColor" opacity=".4" /><path d="M14.25 7.5a4.25 4.25 0 1 1 4.25 4.25H2a.75.75 0 0 1 0-1.5h16.5a2.75 2.75 0 1 0-2.75-2.75V8a.75.75 0 0 1-1.5 0z" fill="currentColor" opacity=".7" /></svg>
+  )
+}
+export function SolarWaterdropBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height ?? '1em'} viewBox="0 0 24 24" width={width ?? '1em'} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M11.612 22h.777C17.145 22 21 18.057 21 13.193v-.265c0-4.611-2.729-8.765-6.903-10.507a5.43 5.43 0 0 0-4.194 0C5.73 4.163 3 8.317 3 12.928v.265C3 18.057 6.855 22 11.612 22" fill="currentColor" opacity=".5" /><path d="M12.066 5.961a.75.75 0 0 1-.366.996c-1.545.715-2.793 2.168-3.37 3.993a.75.75 0 1 1-1.43-.453c.691-2.186 2.206-3.993 4.17-4.902a.75.75 0 0 1 .996.366" fill="currentColor" /></svg>
+  )
+}
+export function SolarTemperatureBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height ?? '1em'} viewBox="0 0 24 24" width={width ?? '1em'} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M17.5 16.5a5.5 5.5 0 1 1-8.939-4.293c.264-.211.439-.521.439-.86V5a3 3 0 1 1 6 0v6.348c0 .338.175.648.439.86A5.49 5.49 0 0 1 17.5 16.5" fill="currentColor" opacity=".5" /><path d="M12.75 5a.75.75 0 0 0-1.5 0v8.38c0 .437-.297.808-.658 1.054a2.5 2.5 0 1 0 2.816 0c-.36-.246-.658-.617-.658-1.054z" fill="currentColor" /></svg>
+  )
+}
+export function SolarSun2BoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height ?? '1em'} viewBox="0 0 24 24" width={width ?? '1em'} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M17 12a5 5 0 1 1-10 0a5 5 0 0 1 10 0" fill="currentColor" /><path clipRule="evenodd" d="M12 1.25a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75M1.25 12a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75m18 0a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75M12 19.25a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 1 .75-.75" fill="currentColor" fillRule="evenodd" /><path d="M3.67 3.716a.75.75 0 0 1 1.059-.048L6.95 5.7a.75.75 0 0 1-1.012 1.107L3.717 4.775a.75.75 0 0 1-.048-1.06m16.663.001a.75.75 0 0 1-.047 1.06l-2.223 2.03A.75.75 0 1 1 17.05 5.7l2.222-2.032a.75.75 0 0 1 1.06.048m-3.306 13.309a.75.75 0 0 1 1.06 0l2.223 2.222a.75.75 0 1 1-1.061 1.06l-2.222-2.222a.75.75 0 0 1 0-1.06m-10.051 0a.75.75 0 0 1 0 1.06l-2.222 2.223a.75.75 0 0 1-1.06-1.06l2.222-2.223a.75.75 0 0 1 1.06 0" fill="currentColor" opacity=".5" /></svg>
+  )
+}
+
+export function SolarCalculatorBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M12 22c-4.243 0-6.364 0-7.682-1.465C3 19.072 3 16.714 3 12s0-7.071 1.318-8.536S7.758 2 12 2s6.364 0 7.682 1.464C21 4.93 21 7.286 21 12s0 7.071-1.318 8.535S16.242 22 12 22" fill="currentColor" opacity=".5" /><path d="M15 6H9c-.465 0-.697 0-.888.051a1.5 1.5 0 0 0-1.06 1.06C7 7.304 7 7.536 7 8s0 .697.051.888a1.5 1.5 0 0 0 1.06 1.06C8.304 10 8.536 10 9 10h6c.465 0 .697 0 .888-.051a1.5 1.5 0 0 0 1.06-1.06C17 8.696 17 8.464 17 8s0-.697-.051-.888a1.5 1.5 0 0 0-1.06-1.06C15.697 6 15.464 6 15 6m-7 8a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2" fill="currentColor" /></svg>
+  )
+}
+
+export function SolarQuestionCircleLineDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<g fill="none"><circle cx="12" cy="12" opacity=".5" r="10" stroke="currentColor" strokeWidth="1.5" /><path d="M10.125 8.875a1.875 1.875 0 1 1 2.828 1.615c-.475.281-.953.708-.953 1.26V13" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" /><circle cx="12" cy="16" fill="currentColor" r="1" /></g></svg>
+  )
+}
+
+export function SolarFireSquareBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+  
+  return (
+    <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M3.464 20.536C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535" fill="currentColor" opacity=".5" /><path d="M17 12.667C17 16.933 13.444 18 11.667 18C10.11 18 7 16.933 7 12.667C7 10.81 8.063 9.633 8.956 9.04c.408-.271.916-.098.942.391c.058 1.071.883 1.931 1.523 1.07c.584-.788.873-1.858.873-2.501c0-.947.958-1.548 1.707-.968C15.459 8.162 17 10.056 17 12.667" fill="currentColor" /></svg>
+  )
+}
+
+export function SolarDangerTriangleBoldDuotone(props: React.SVGProps<SVGSVGElement>) {
+  const { height, width } = props
+
+  return (
+    <svg height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<path d="M12 3c-2.31 0-3.77 2.587-6.688 7.762l-.364.644c-2.425 4.3-3.638 6.45-2.542 8.022S6.214 21 11.636 21h.728c5.422 0 8.134 0 9.23-1.572s-.117-3.722-2.542-8.022l-.364-.645C15.77 5.587 14.311 3 12 3" fill="currentColor" opacity=".5" /><path d="M12 7.25a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0V8a.75.75 0 0 1 .75-.75M12 17a1 1 0 1 0 0-2a1 1 0 0 0 0 2" fill="currentColor" /></svg>
+  )
+}
