@@ -6,7 +6,14 @@ import { ClimateData } from '@/types';
 import { recalcValues } from '@/utils/simulator';
 
 export function useClimaticInfo() {    
-    const initialData = climateDataJSON.climatic_data.map(climaticData => recalcValues(climaticData))
+    const initialData = climateDataJSON.climatic_data.map(climaticData => {
+      const newNada = recalcValues(climaticData)
+
+      return {
+        ...newNada,
+        funcion_logistica_aplicada: (newNada.funcion_logistica_aplicada) * 100
+      }
+    })
     const months = climateDataJSON.climatic_data.map((val) => val.mes)
     const chartLabels = months.map((month) => month.substring(0,3))  
 
