@@ -7,7 +7,7 @@ export function recalcValues(data: ClimateData): ClimateData {
   const coeficiente_total = (data.CT - data.CH) + data.CV + data.CS
   const tasa_de_cambio = coeficiente_total + interaccion_temp_viento + interaccion_temp_sequedad;
 
-  const funcion_logistica_aplicada = 1 / (1 + Math.pow(2.71828, (-5 * (((tasa_de_cambio * 0.5) + 0.1) - 1.29))));
+  const funcion_logistica_aplicada = 1 / (1 + Math.pow(Math.E, (-5 * (((tasa_de_cambio * 0.5) + 0.01) - 0.92))));
 
   return {
     ...data,
