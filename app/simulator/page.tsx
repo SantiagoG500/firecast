@@ -35,7 +35,7 @@ export default function SimulatorPage() {
           />
         </div>
 
-        <div className='flex flex-col w-full gap-4 mt-28 md:mt-16 md:w-4/5 md:grid grid-cols-2 grid-rows-[min-content, 1fr] '>
+        <div className='flex flex-col w-full gap-4 mt-28 md:mt-16 md:w-4/5 md:grid grid-cols-2 grid-rows-[1fr, 1fr] '>
           <ClimaticOptionsCard
             changeCurrentMonth={changeCurrentMonth}
             monthData={monthData}
