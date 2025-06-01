@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <>          
       {/* FireCast: predicción inteligente para prevenir incendios forestales antes de que ocurran. */}
-      <section className="flex flex-col items-center justify-center gap-4 py-8 mt-16 md:mt-20">
+      <section className="flex flex-col items-center justify-center gap-4 py-8 mt-16 md:mt-20 z-50">
         <div className="inline-block max-w-xl text-center justify-center">
           {/* <span className={title()}>Predicción inteligente de incendios con &nbsp;</span> */}
           <span className={title({ color: "yellow" })}>FireCast 🔥&nbsp;</span>
@@ -81,7 +81,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <canvas ref={canvasRef} className="absolute bottom-0 left-0 w-full h-full" />
+      <canvas ref={canvasRef} className="absolute bottom-0 left-0 w-full h-full pointer-events-none" />
     </>
   );
 }
