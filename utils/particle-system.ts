@@ -63,7 +63,7 @@ export function ParticleSystem({ settings, ctx, canvas }: ParticleSettingsProps)
 
   const animate =  () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    createParticle(Math.random() * canvas.width, canvas.height - 20);
+    createParticle(Math.random() * canvas.width, canvas.height);
     drawParticles();
     requestAnimationFrame(animate);
   }
